@@ -15,7 +15,6 @@
         --border-color: #fcb63d;
       }
 
-
       .a4-paper {
         width: 210mm;
         height: 297mm;
@@ -34,8 +33,8 @@
           rgba(255, 255, 255, 0.6111694677871149) 100%
         ); */
 
-        background-image: url('./assets/bg.jpeg');
-        background-position: center; 
+        background-image: url("./assets/bg.jpeg");
+        background-position: center;
         background-size: cover;
       }
 
@@ -44,7 +43,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        opacity: 0.3;
+        opacity: 0.15;
         z-index: 10;
         width: 100%;
         height: 100%;
@@ -62,7 +61,7 @@
       table,
       th,
       td {
-        border: 2px solid rgb(224, 216, 216) !important;
+        border: 2px solid rgb(224, 216, 216);
       }
 
       td {
@@ -77,547 +76,436 @@
       td {
         padding: 6px 8px;
       }
+
+      .user-table,
+      .user-table th,
+      .user-table td {
+        border: 1px solid black;
+        font-size: 14px;
+      }
     </style>
   </head>
   <body>
     <div class="a4-paper">
       <div class="page">
         <div class="watermark"></div>
+
+        <!-- div for qr code and logo -->
+        <div style="margin: 100px 0"></div>
+        <div>
+          <h2 class="text-center h3 mb-4 fw-bolder">
+            Immunization Records for Children
+          </h2>
+        </div>
+
+        <p class="text-end">
+          <span class="fw-bold">Last Update: </span> 19/12/2024
+        </p>
+
+        <div class="mb-4">
+          <table class="user-table">
+            <tbody>
+              <tr>
+                <td><span class="fw-bold">Name: </span> Pradip Kumar Das</td>
+                <td><span class="fw-bold">Date of Birth: </span> 03/05/2020</td>
+              </tr>
+              <tr>
+                <td><span class="fw-bold">Father's Name: </span> Sukendu Bikash Das</td>
+                <td><span class="fw-bold">Gender: </span>Male</td>
+              </tr>
+              <tr>
+                <td><span class="fw-bold">Mother's Name: </span> Josna Das</td>
+                <td><span class="fw-bold">UHID: </span>10017</td>
+              </tr>
+              <tr>
+                <td><span class="fw-bold">Mobile Number: </span> 01718277134</td>
+                <td><span class="fw-bold">Nationality: </span>Bangladeshi</td>
+              </tr>
+              <tr>
+                <td><span class="fw-bold">Passport Number: </span> A00987543</td>
+                <td><span class="fw-bold">Birth Certificate Number: </span>45678</td>
+              </tr>
+              <tr>
+                <td colspan="2"><span class="fw-bold">Address: </span>Jamal Khan, Chittagong</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
         <div class="d-flex gap-2">
           <table>
-          <thead
-            class="text-white"
-            style="background-color: var(--accent-color)"
-          >
-            <tr>
-              <th>Vaccine Name</th>
-              <th>Dose</th>
-              <th>Due Date</th>
-              <th>Vaccination Done On</th>
-              <th>Remarks</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr style="background-color: #f0c9de">
-              <td>BCG</td>
-              <td>1</td>
-              <td>14/05/2002</td>
-              <td>16/12/2024</td>
-              <td></td>
-            </tr>
-            <tr style="background-color: #fad5c5">
-              <td>DPT+OPV</td>
-              <td>2</td>
-              <td>17/07/2002</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr style="background-color: #bec4e6">
-              <td>Hepatitis-B</td>
-              <td>1</td>
-              <td>17/06/2002</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr style="background-color: #d8ebf2">
-              <td>Hepatitis-B</td>
-              <td>3</td>
-              <td>16/08/2002</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr style="background-color: #e9f2d5">
-              <td>Hepatitis-A</td>
-              <td>1</td>
-              <td>03/05/2003</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr style="background-color: #c8cfe8">
-              <td>Rotavirus</td>
-              <td>1</td>
-              <td>17/06/2002</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr style="background-color: #f0c9de">
-              <td>BCG</td>
-              <td>1</td>
-              <td>14/05/2002</td>
-              <td>16/12/2024</td>
-              <td></td>
-            </tr>
-            <tr style="background-color: #fad5c5">
-              <td>DPT+OPV</td>
-              <td>2</td>
-              <td>17/07/2002</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr style="background-color: #bec4e6">
-              <td>Hepatitis-B</td>
-              <td>1</td>
-              <td>17/06/2002</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr style="background-color: #d8ebf2">
-              <td>Hepatitis-B</td>
-              <td>3</td>
-              <td>16/08/2002</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr style="background-color: #e9f2d5">
-              <td>Hepatitis-A</td>
-              <td>1</td>
-              <td>03/05/2003</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr style="background-color: #c8cfe8">
-              <td>Rotavirus</td>
-              <td>1</td>
-              <td>17/06/2002</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr style="background-color: #f0c9de">
-              <td>BCG</td>
-              <td>1</td>
-              <td>14/05/2002</td>
-              <td>16/12/2024</td>
-              <td></td>
-            </tr>
-            <tr style="background-color: #fad5c5">
-              <td>DPT+OPV</td>
-              <td>2</td>
-              <td>17/07/2002</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr style="background-color: #bec4e6">
-              <td>Hepatitis-B</td>
-              <td>1</td>
-              <td>17/06/2002</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr style="background-color: #d8ebf2">
-              <td>Hepatitis-B</td>
-              <td>3</td>
-              <td>16/08/2002</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr style="background-color: #e9f2d5">
-              <td>Hepatitis-A</td>
-              <td>1</td>
-              <td>03/05/2003</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr style="background-color: #c8cfe8">
-              <td>Rotavirus</td>
-              <td>1</td>
-              <td>17/06/2002</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr style="background-color: #f0c9de">
-              <td>BCG</td>
-              <td>1</td>
-              <td>14/05/2002</td>
-              <td>16/12/2024</td>
-              <td></td>
-            </tr>
-            <tr style="background-color: #fad5c5">
-              <td>DPT+OPV</td>
-              <td>2</td>
-              <td>17/07/2002</td>
-              <td></td>
-              <td></td>
-            </tr>
-            
-          </tbody>
-        </table>
+            <thead
+              class="text-white"
+              style="background-color: var(--accent-color)"
+            >
+              <tr>
+                <th>Vaccine Name</th>
+                <th>Dose</th>
+                <th>Due Date</th>
+                <th>Vaccination Done On</th>
+                <th>Remarks</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="background-color: #f0c9de">
+                <td>BCG</td>
+                <td>1</td>
+                <td>14/05/2002</td>
+                <td>16/12/2024</td>
+                <td></td>
+              </tr>
+              <tr style="background-color: #fad5c5">
+                <td>DPT+OPV</td>
+                <td>2</td>
+                <td>17/07/2002</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr style="background-color: #bec4e6">
+                <td>Hepatitis-B</td>
+                <td>1</td>
+                <td>17/06/2002</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr style="background-color: #d8ebf2">
+                <td>Hepatitis-B</td>
+                <td>3</td>
+                <td>16/08/2002</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr style="background-color: #e9f2d5">
+                <td>Hepatitis-A</td>
+                <td>1</td>
+                <td>03/05/2003</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr style="background-color: #c8cfe8">
+                <td>Rotavirus</td>
+                <td>1</td>
+                <td>17/06/2002</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr style="background-color: #f0c9de">
+                <td>BCG</td>
+                <td>1</td>
+                <td>14/05/2002</td>
+                <td>16/12/2024</td>
+                <td></td>
+              </tr>
+              <tr style="background-color: #fad5c5">
+                <td>DPT+OPV</td>
+                <td>2</td>
+                <td>17/07/2002</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr style="background-color: #bec4e6">
+                <td>Hepatitis-B</td>
+                <td>1</td>
+                <td>17/06/2002</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr style="background-color: #d8ebf2">
+                <td>Hepatitis-B</td>
+                <td>3</td>
+                <td>16/08/2002</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr style="background-color: #e9f2d5">
+                <td>Hepatitis-A</td>
+                <td>1</td>
+                <td>03/05/2003</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr style="background-color: #c8cfe8">
+                <td>Rotavirus</td>
+                <td>1</td>
+                <td>17/06/2002</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr style="background-color: #f0c9de">
+                <td>BCG</td>
+                <td>1</td>
+                <td>14/05/2002</td>
+                <td>16/12/2024</td>
+                <td></td>
+              </tr>
+              <tr style="background-color: #fad5c5">
+                <td>DPT+OPV</td>
+                <td>2</td>
+                <td>17/07/2002</td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
 
-        <table>
-          <thead
-            class="text-white"
-            style="background-color: var(--accent-color)"
-          >
-            <tr>
-              <th>Vaccine Name</th>
-              <th>Dose</th>
-              <th>Due Date</th>
-              <th>Vaccination Done On</th>
-              <th>Remarks</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr style="background-color: #f0c9de">
-              <td>BCG</td>
-              <td>1</td>
-              <td>14/05/2002</td>
-              <td>16/12/2024</td>
-              <td></td>
-            </tr>
-            <tr style="background-color: #fad5c5">
-              <td>DPT+OPV</td>
-              <td>2</td>
-              <td>17/07/2002</td>
-              <td></td>
-              <td></td>
-              <!-- <td>DPT+OPV</td>
-              <td>3</td>
-              <td>16/08/2002</td>
-              <td></td>
-              <td></td> -->
-            </tr>
-            <tr style="background-color: #bec4e6">
-              <td>Hepatitis-B</td>
-              <td>1</td>
-              <td>17/06/2002</td>
-              <td></td>
-              <td></td>
-              <!-- <td>Hepatitis-B</td>
-              <td>2</td>
-              <td>17/07/2002</td>
-              <td></td>
-              <td></td> -->
-            </tr>
-            <tr style="background-color: #d8ebf2">
-              <td>Hepatitis-B</td>
-              <td>3</td>
-              <td>16/08/2002</td>
-              <td></td>
-              <td></td>
-              <!-- <td>Hepatitis-B</td>
-              <td>4</td>
-              <td>12/06/2003</td>
-              <td></td>
-              <td></td> -->
-            </tr>
-            <tr style="background-color: #e9f2d5">
-              <td>Hepatitis-A</td>
-              <td>1</td>
-              <td>03/05/2003</td>
-              <td></td>
-              <td></td>
-              <!-- <td>Hepatitis-A</td>
-              <td>2</td>
-              <td>30/10/2003</td>
-              <td></td>
-              <td></td> -->
-            </tr>
-            <tr style="background-color: #c8cfe8">
-              <td>Rotavirus</td>
-              <td>1</td>
-              <td>17/06/2002</td>
-              <td></td>
-              <td></td>
-              <!-- <td>Rotavirus</td>
-              <td>2</td>
-              <td>17/07/2002</td>
-              <td></td>
-              <td></td> -->
-            </tr>
-            <tr style="background-color: #f0c9de">
-              <td>BCG</td>
-              <td>1</td>
-              <td>14/05/2002</td>
-              <td>16/12/2024</td>
-              <td></td>
-              <!-- <td>DPT+OPV</td>
-              <td>1</td>
-              <td>17/06/2002</td>
-              <td>16/12/2024</td>
-              <td></td> -->
-            </tr>
-            <tr style="background-color: #fad5c5">
-              <td>DPT+OPV</td>
-              <td>2</td>
-              <td>17/07/2002</td>
-              <td></td>
-              <td></td>
-              <!-- <td>DPT+OPV</td>
-              <td>3</td>
-              <td>16/08/2002</td>
-              <td></td>
-              <td></td> -->
-            </tr>
-            <tr style="background-color: #bec4e6">
-              <td>Hepatitis-B</td>
-              <td>1</td>
-              <td>17/06/2002</td>
-              <td></td>
-              <td></td>
-              <!-- <td>Hepatitis-B</td>
-              <td>2</td>
-              <td>17/07/2002</td>
-              <td></td>
-              <td></td> -->
-            </tr>
-            <tr style="background-color: #d8ebf2">
-              <td>Hepatitis-B</td>
-              <td>3</td>
-              <td>16/08/2002</td>
-              <td></td>
-              <td></td>
-              <!-- <td>Hepatitis-B</td>
-              <td>4</td>
-              <td>12/06/2003</td>
-              <td></td>
-              <td></td> -->
-            </tr>
-            <tr style="background-color: #e9f2d5">
-              <td>Hepatitis-A</td>
-              <td>1</td>
-              <td>03/05/2003</td>
-              <td></td>
-              <td></td>
-              <!-- <td>Hepatitis-A</td>
-              <td>2</td>
-              <td>30/10/2003</td>
-              <td></td>
-              <td></td> -->
-            </tr>
-            <tr style="background-color: #c8cfe8">
-              <td>Rotavirus</td>
-              <td>1</td>
-              <td>17/06/2002</td>
-              <td></td>
-              <td></td>
-              <!-- <td>Rotavirus</td>
-              <td>2</td>
-              <td>17/07/2002</td>
-              <td></td>
-              <td></td> -->
-            </tr>
-            <tr style="background-color: #f0c9de">
-              <td>BCG</td>
-              <td>1</td>
-              <td>14/05/2002</td>
-              <td>16/12/2024</td>
-              <td></td>
-              <!-- <td>DPT+OPV</td>
-              <td>1</td>
-              <td>17/06/2002</td>
-              <td>16/12/2024</td>
-              <td></td> -->
-            </tr>
-            <tr style="background-color: #fad5c5">
-              <td>DPT+OPV</td>
-              <td>2</td>
-              <td>17/07/2002</td>
-              <td></td>
-              <td></td>
-              <!-- <td>DPT+OPV</td>
-              <td>3</td>
-              <td>16/08/2002</td>
-              <td></td>
-              <td></td> -->
-            </tr>
-            <tr style="background-color: #bec4e6">
-              <td>Hepatitis-B</td>
-              <td>1</td>
-              <td>17/06/2002</td>
-              <td></td>
-              <td></td>
-              <!-- <td>Hepatitis-B</td>
-              <td>2</td>
-              <td>17/07/2002</td>
-              <td></td>
-              <td></td> -->
-            </tr>
-            <tr style="background-color: #d8ebf2">
-              <td>Hepatitis-B</td>
-              <td>3</td>
-              <td>16/08/2002</td>
-              <td></td>
-              <td></td>
-              <!-- <td>Hepatitis-B</td>
-              <td>4</td>
-              <td>12/06/2003</td>
-              <td></td>
-              <td></td> -->
-            </tr>
-            <tr style="background-color: #e9f2d5">
-              <td>Hepatitis-A</td>
-              <td>1</td>
-              <td>03/05/2003</td>
-              <td></td>
-              <td></td>
-              <!-- <td>Hepatitis-A</td>
-              <td>2</td>
-              <td>30/10/2003</td>
-              <td></td>
-              <td></td> -->
-            </tr>
-            <tr style="background-color: #c8cfe8">
-              <td>Rotavirus</td>
-              <td>1</td>
-              <td>17/06/2002</td>
-              <td></td>
-              <td></td>
-              <!-- <td>Rotavirus</td>
-              <td>2</td>
-              <td>17/07/2002</td>
-              <td></td>
-              <td></td> -->
-            </tr>
-            <tr style="background-color: #f0c9de">
-              <td>BCG</td>
-              <td>1</td>
-              <td>14/05/2002</td>
-              <td>16/12/2024</td>
-              <td></td>
-              <!-- <td>DPT+OPV</td>
-              <td>1</td>
-              <td>17/06/2002</td>
-              <td>16/12/2024</td>
-              <td></td> -->
-            </tr>
-            <tr style="background-color: #fad5c5">
-              <td>DPT+OPV</td>
-              <td>2</td>
-              <td>17/07/2002</td>
-              <td></td>
-              <td></td>
-              <!-- <td>DPT+OPV</td>
-              <td>3</td>
-              <td>16/08/2002</td>
-              <td></td>
-              <td></td> -->
-            </tr>
-            
-          </tbody>
-        </table>
+          <table>
+            <thead
+              class="text-white"
+              style="background-color: var(--accent-color)"
+            >
+              <tr>
+                <th>Vaccine Name</th>
+                <th>Dose</th>
+                <th>Due Date</th>
+                <th>Vaccination Done On</th>
+                <th>Remarks</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="background-color: #f0c9de">
+                <td>BCG</td>
+                <td>1</td>
+                <td>14/05/2002</td>
+                <td>16/12/2024</td>
+                <td></td>
+              </tr>
+              <tr style="background-color: #fad5c5">
+                <td>DPT+OPV</td>
+                <td>2</td>
+                <td>17/07/2002</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr style="background-color: #bec4e6">
+                <td>Hepatitis-B</td>
+                <td>1</td>
+                <td>17/06/2002</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr style="background-color: #d8ebf2">
+                <td>Hepatitis-B</td>
+                <td>3</td>
+                <td>16/08/2002</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr style="background-color: #e9f2d5">
+                <td>Hepatitis-A</td>
+                <td>1</td>
+                <td>03/05/2003</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr style="background-color: #c8cfe8">
+                <td>Rotavirus</td>
+                <td>1</td>
+                <td>17/06/2002</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr style="background-color: #f0c9de">
+                <td>BCG</td>
+                <td>1</td>
+                <td>14/05/2002</td>
+                <td>16/12/2024</td>
+                <td></td>
+              </tr>
+              <tr style="background-color: #fad5c5">
+                <td>DPT+OPV</td>
+                <td>2</td>
+                <td>17/07/2002</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr style="background-color: #bec4e6">
+                <td>Hepatitis-B</td>
+                <td>1</td>
+                <td>17/06/2002</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr style="background-color: #d8ebf2">
+                <td>Hepatitis-B</td>
+                <td>3</td>
+                <td>16/08/2002</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr style="background-color: #e9f2d5">
+                <td>Hepatitis-A</td>
+                <td>1</td>
+                <td>03/05/2003</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr style="background-color: #c8cfe8">
+                <td>Rotavirus</td>
+                <td>1</td>
+                <td>17/06/2002</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr style="background-color: #f0c9de">
+                <td>BCG</td>
+                <td>1</td>
+                <td>14/05/2002</td>
+                <td>16/12/2024</td>
+                <td></td>
+              </tr>
+              <tr style="background-color: #fad5c5">
+                <td>DPT+OPV</td>
+                <td>2</td>
+                <td>17/07/2002</td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
-      <div class="page">
+      <div class="page mt-4">
         <div class="watermark"></div>
         <div class="d-flex gap-2">
           <table>
-          <thead
-            class="text-white"
-            style="background-color: var(--accent-color)"
-          >
-            <tr>
-              <th>Vaccine Name</th>
-              <th>Dose</th>
-              <th>Due Date</th>
-              <th>Vaccination Done On</th>
-              <th>Remarks</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr style="background-color: #f0c9de">
-              <td>BCG</td>
-              <td>1</td>
-              <td>14/05/2002</td>
-              <td>16/12/2024</td>
-              <td></td>
-            </tr>
-            <tr style="background-color: #fad5c5">
-              <td>DPT+OPV</td>
-              <td>2</td>
-              <td>17/07/2002</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr style="background-color: #bec4e6">
-              <td>Hepatitis-B</td>
-              <td>1</td>
-              <td>17/06/2002</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr style="background-color: #d8ebf2">
-              <td>Hepatitis-B</td>
-              <td>3</td>
-              <td>16/08/2002</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr style="background-color: #e9f2d5">
-              <td>Hepatitis-A</td>
-              <td>1</td>
-              <td>03/05/2003</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr style="background-color: #c8cfe8">
-              <td>Rotavirus</td>
-              <td>1</td>
-              <td>17/06/2002</td>
-              <td></td>
-              <td></td>
-            </tr>
-            
-          </tbody>
-        </table>
+            <thead
+              class="text-white"
+              style="background-color: var(--accent-color)"
+            >
+              <tr>
+                <th>Vaccine Name</th>
+                <th>Dose</th>
+                <th>Due Date</th>
+                <th>Vaccination Done On</th>
+                <th>Remarks</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="background-color: #f0c9de">
+                <td>BCG</td>
+                <td>1</td>
+                <td>14/05/2002</td>
+                <td>16/12/2024</td>
+                <td></td>
+              </tr>
+              <tr style="background-color: #fad5c5">
+                <td>DPT+OPV</td>
+                <td>2</td>
+                <td>17/07/2002</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr style="background-color: #bec4e6">
+                <td>Hepatitis-B</td>
+                <td>1</td>
+                <td>17/06/2002</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr style="background-color: #d8ebf2">
+                <td>Hepatitis-B</td>
+                <td>3</td>
+                <td>16/08/2002</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr style="background-color: #e9f2d5">
+                <td>Hepatitis-A</td>
+                <td>1</td>
+                <td>03/05/2003</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr style="background-color: #c8cfe8">
+                <td>Rotavirus</td>
+                <td>1</td>
+                <td>17/06/2002</td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
 
-        <table>
-          <thead
-            class="text-white"
-            style="background-color: var(--accent-color)"
-          >
-            <tr>
-              <th>Vaccine Name</th>
-              <th>Dose</th>
-              <th>Due Date</th>
-              <th>Vaccination Done On</th>
-              <th>Remarks</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr style="background-color: #f0c9de">
-              <td>BCG</td>
-              <td>1</td>
-              <td>14/05/2002</td>
-              <td>16/12/2024</td>
-              <td></td>
-            </tr>
-            <tr style="background-color: #fad5c5">
-              <td>DPT+OPV</td>
-              <td>2</td>
-              <td>17/07/2002</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr style="background-color: #bec4e6">
-              <td>Hepatitis-B</td>
-              <td>1</td>
-              <td>17/06/2002</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr style="background-color: #d8ebf2">
-              <td>Hepatitis-B</td>
-              <td>3</td>
-              <td>16/08/2002</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr style="background-color: #e9f2d5">
-              <td>Hepatitis-A</td>
-              <td>1</td>
-              <td>03/05/2003</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr style="background-color: #c8cfe8">
-              <td>Rotavirus</td>
-              <td>1</td>
-              <td>17/06/2002</td>
-              <td></td>
-              <td></td>
-            </tr>
-            
-          </tbody>
-        </table>
+          <table>
+            <thead
+              class="text-white"
+              style="background-color: var(--accent-color)"
+            >
+              <tr>
+                <th>Vaccine Name</th>
+                <th>Dose</th>
+                <th>Due Date</th>
+                <th>Vaccination Done On</th>
+                <th>Remarks</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="background-color: #f0c9de">
+                <td>BCG</td>
+                <td>1</td>
+                <td>14/05/2002</td>
+                <td>16/12/2024</td>
+                <td></td>
+              </tr>
+              <tr style="background-color: #fad5c5">
+                <td>DPT+OPV</td>
+                <td>2</td>
+                <td>17/07/2002</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr style="background-color: #bec4e6">
+                <td>Hepatitis-B</td>
+                <td>1</td>
+                <td>17/06/2002</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr style="background-color: #d8ebf2">
+                <td>Hepatitis-B</td>
+                <td>3</td>
+                <td>16/08/2002</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr style="background-color: #e9f2d5">
+                <td>Hepatitis-A</td>
+                <td>1</td>
+                <td>03/05/2003</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr style="background-color: #c8cfe8">
+                <td>Rotavirus</td>
+                <td>1</td>
+                <td>17/06/2002</td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div
+          style="
+            height: 2px;
+            background-color: var(--main-color);
+            margin-top: 50px;
+          "
+        ></div>
+
+        <div class="text-center">
+          <p class="mt-4 mb-1">
+            106/A, K.B. Fazlur Kader Road, Panchlaish, Chattogram.
+          </p>
+          <p class="my-0 mb-1">
+            (Opposite to Chittagong Medical College Hospital's Main Gate), West
+            Side of Epic Health Care, Care Investigation (2nd Floor)
+          </p>
+
+          <h6 class="mb-1">
+            Tel: 0241-355253, Mobile: 01915633535, 01734941989, 01819102021
+          </h6>
+          <p class="my-0">Visit: www.vaccinehomebd.com</p>
         </div>
       </div>
     </div>
