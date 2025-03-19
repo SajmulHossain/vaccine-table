@@ -93,6 +93,11 @@
         background-color: rgb(18, 203, 18);
         color: white;
       }
+
+      .header-table td,
+      .header-table {
+        border: none;
+      }
     </style>
   </head>
   <body>
@@ -101,7 +106,7 @@
         <div class="watermark"></div>
 
         <!-- div for qr code and logo -->
-        <div class="d-flex justify-content-between align-items-center">
+        <!-- <div class="d-flex justify-content-between align-items-center">
           <div style="width: 40%;">
             <img class="w-100" src="assets/logo2.jpeg" alt="">
           </div>
@@ -111,7 +116,23 @@
           <div style="width: 15%;">
             <img class="w-100" src="assets/qr.jpeg" alt="">
           </div>
-        </div>
+        </div> -->
+
+        <table class="header-table mb-4">
+          <tbody>
+            <tr>
+              <td style="width: 40%;">
+                <img class="w-100" src="/assets/logo2.jpeg" alt="">
+              </td>
+              <td style="width: 40%;">
+                <img class="w-100" src="assets/logo1.jpeg" alt="">
+              </td>
+              <td>
+                <img class="w-100" src="assets/qr.jpeg" alt="">
+              </td>
+            </tr>
+          </tbody>
+        </table>
         <div>
           <h2 class="text-center h3 mb-4 fw-bolder">
             Immunization Records for Children
@@ -506,51 +527,51 @@
         </div>
 
         
-<!-- for seal and sign -->
-        <div class="d-flex justify-content-end mt-4">
-          <div class="d-flex gap-4 w-50">
-            <div>
-              <img class="w-100 h-100 object-fit-cover" src="assets/seal.png" alt="seal img">
-            </div>
-            <div>
-              <img class="w-100 h-100 object-fit-cover" src="assets/sign.png" alt="signature image">
-              <div
-          style="
-            height: 1px;
-            background-color: black;
-          "
-        ></div>
-              <p class="text-center">
-                Autorised signature</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- for horizontal line -->
+<div style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 0 16px;"><!-- for seal and sign -->
+  <div class="d-flex justify-content-end mt-4">
+    <div class="d-flex gap-4 w-50">
+      <div>
+        <img class="w-100 h-100 object-fit-cover" src="assets/seal.png" alt="seal img">
+      </div>
+      <div>
+        <img class="w-100 h-100 object-fit-cover" src="assets/sign.png" alt="signature image">
         <div
-          style="
-            height: 2px;
-            background-color: var(--main-color);
-            margin-top: 50px;
-          "
-        ></div>
+    style="
+      height: 1px;
+      background-color: black;
+    "
+  ></div>
+        <p class="text-center">
+          Autorised signature</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- for horizontal line -->
+  <div
+    style="
+      height: 2px;
+      background-color: var(--main-color);
+      margin-top: 50px;
+    "
+  ></div>
 
 
 <!-- for footer -->
-        <div class="text-center border mt-4 p-4" style="border-color: var(--border-color) !important; border-radius: 10px;">
-          <p class="mt-4 mb-1">
-            106/A, K.B. Fazlur Kader Road, Panchlaish, Chattogram.
-          </p>
-          <p class="my-0 mb-1">
-            (Opposite to Chittagong Medical College Hospital's Main Gate), West
-            Side of Epic Health Care, Care Investigation (2nd Floor)
-          </p>
+  <div class="text-center border mt-4 p-4" style="border-color: var(--border-color) !important; border-radius: 10px; margin-top: auto;">
+    <p class="mt-4 mb-1">
+      106/A, K.B. Fazlur Kader Road, Panchlaish, Chattogram.
+    </p>
+    <p class="my-0 mb-1">
+      (Opposite to Chittagong Medical College Hospital's Main Gate), West
+      Side of Epic Health Care, Care Investigation (2nd Floor)
+    </p>
 
-          <h6 class="mb-1">
-            Tel: 0241-355253, Mobile: 01915633535, 01734941989, 01819102021
-          </h6>
-          <p class="my-0">Visit: www.vaccinehomebd.com</p>
-        </div>
+    <h6 class="mb-1">
+      Tel: 0241-355253, Mobile: 01915633535, 01734941989, 01819102021
+    </h6>
+    <p class="my-0">Visit: www.vaccinehomebd.com</p>
+  </div></div>
       </div>
     </div>
 
